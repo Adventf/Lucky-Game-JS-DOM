@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lucky Game</title>
+  </head>
+  <body>
+    <!-- navigation bar start -->
+    <div class="navwrapper">
+      <ul class="navigation">
+        <li class="nav">
+          <a href="#home" class="navlink">HOME</a>
+        </li>
+        <li class="nav">
+          <a href="#start" class="navlink">START</a>
+        </li>
+        <li class="nav">
+          <a href="#reward" class="navlink">REWARD</a>
+        </li>
+      </ul>
+    </div>
+    <section id="home">
+      <div class="container">
+        <div class="contentwrapper">
+          <div class="title" id="title">Coba Dulu, Cuan Belakangan!</div>
+          <div id="registerForm">
+            <input type="text" placeholder="username" id="username" />
+          </div>
+          <div>
+            <button class="register" onclick="register()">Register Here</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="gamePage">
+      <section id="start">
+        <div class="container red">
+          <div class="username">
+            <p style="font-size: 25px">Selamat mencoba <span id="nama"></span></p>
+          </div>
+          <div class="gamewrapper">
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+            <div class="box" id="box3"></div>
+          </div>
+          <div class="buttonwrapper">
+            <button class="startButton" onclick="start()">START</button>
+          </div>
+          <div class="buttonNyerah">
+            <button onclick="logout()" id="logoutForm">NYERAH</button>
+          </div>
+        </div>
+      </section>
+      <section id="reward">
+        <div class="container blue">
+          <div class="contentwrapper" id="imgReward">
+            <div class="titleReward">
+              <h1>👇REWARD BUAT ANDA 👇</h1>
+            </div>
+            <div id="hasilScore"></div>
+          </div>
+          <div id="top" onclick="directing()">☝</div>
+        </div>
+      </section>
+    </div>
+    <script>
+      function directing() {
+        location.href = "#start";
+      }
+    </script>
+    <script src="module/Player.js"></script>
+    <script src="init.js"></script>
+    <script>
+      document;
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
