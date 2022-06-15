@@ -26,17 +26,28 @@ section {
 }
 #username {
   width: 150px;
-  height: 25px;
+  height: 35px;
   margin-top: 35px;
+  font-size: 18px;
+  text-align: center;
+  border-color: rgb(255, 0, 51);
+  border-width: 3px;
 }
 .register {
   margin-top: 5px;
   width: 150px;
   background-color: crimson;
   cursor: pointer;
-  height: 25px;
+  height: 35px;
   border-color: honeydew;
+  border-width: 3px;
   color: honeydew;
+  font-size: 18px;
+}
+.register:hover {
+  border-color: crimson;
+  background-color: honeydew;
+  color: crimson;
 }
 
 .container {
