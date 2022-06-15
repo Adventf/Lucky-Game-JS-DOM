@@ -9,6 +9,17 @@ body {
   scroll-behavior: smooth;
 }
 
+.navbar {
+  background-color: crimson;
+}
+.nav-link,
+.navbar-brand {
+  color: bisque;
+  font-family: "Patrick Hand", cursive;
+  font-weight: 900;
+  font-size: 20px;
+}
+
 body {
   font-family: "Patrick Hand", cursive;
 }
@@ -23,6 +34,7 @@ section {
 
 .titleReward {
   margin-top: 50px;
+  margin-top: 80px;
 }
 #username {
   width: 150px;
@@ -50,7 +62,7 @@ section {
   color: crimson;
 }
 
-.container {
+.containeraja {
   width: 100%;
   height: 100%;
   background-color: #222;
@@ -69,6 +81,7 @@ section {
   font-size: 3em;
   color: white;
   margin-top: 250px;
+  font-family: "Patrick Hand", cursive;
 }
 
 .navwrapper {
@@ -107,10 +120,11 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Patrick Hand", cursive;
 }
 
 #logoutForm {
-  padding: 20px;
+  padding-bottom: 5x;
   border: none;
   background-color: blue;
   color: white;
@@ -125,7 +139,7 @@ section {
 }
 
 .startButton {
-  padding: 20px;
+  padding-bottom: 5x;
   border: none;
   background-color: yellow;
   color: black;
@@ -133,7 +147,9 @@ section {
   width: 200px;
   height: 70px;
   cursor: pointer;
+  justify-content: center;
   margin-bottom: 10px;
+  font-family: "Patrick Hand", cursive;
 }
 .startButton:hover {
   background-color: blue;

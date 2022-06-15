@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <title>Lucky Game</title>
   </head>
   <body>
     <!-- navigation bar start -->
-    <div class="navwrapper">
+    <!-- <div class="navwrapper">
       <ul class="navigation">
         <li class="nav">
           <a href="#home" class="navlink">HOME</a>
@@ -21,23 +22,41 @@
           <a href="#reward" class="navlink">REWARD</a>
         </li>
       </ul>
-    </div>
-    <section id="home">
+    </div> -->
+    <nav class="navbar fixed-top navbar-expand-lg">
       <div class="container">
+        <a class="navbar-brand" href="#">Lucky Game</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#start">Play <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reward">Reward</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="home">
+      <div class="containeraja">
         <div class="contentwrapper">
           <div class="title" id="title">Coba Dulu, Cuan Belakangan!</div>
           <div id="registerForm">
-            <input type="text" placeholder="username" id="username" />
+            <input type="text" placeholder="USERNAME" id="username" />
           </div>
           <div>
-            <button class="register" onclick="register()">Register Here</button>
+            <button class="register" onclick="register()">ENTER</button>
           </div>
         </div>
       </div>
     </section>
     <div class="gamePage">
       <section id="start">
-        <div class="container red">
+        <div class="containeraja red">
           <div class="username">
             <p style="font-size: 25px">Selamat mencoba <span id="nama"></span></p>
           </div>
@@ -55,7 +74,7 @@
         </div>
       </section>
       <section id="reward">
-        <div class="container blue">
+        <div class="containeraja blue">
           <div class="contentwrapper" id="imgReward">
             <div class="titleReward">
               <h1>👇REWARD BUAT ANDA 👇</h1>

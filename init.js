@@ -9,6 +9,7 @@ const box1 = document.getElementById("box1");
 const box2 = document.getElementById("box2");
 const box3 = document.getElementById("box3");
 const rewardImage = document.getElementById("imgReward");
+const navbar = document.querySelector("#navbarNav");
 
 const player = new Player();
 
@@ -89,11 +90,13 @@ onload = function () {
     rewardSection.style.display = "block";
     startSection.style.display = "block";
     homeSection.style.display = "none";
+    navbar.style.display = "block";
   } else {
     registerForm.style.display = "block";
     rewardSection.style.display = "none";
     startSection.style.display = "none";
     homeSection.style.display = "block";
+    navbar.style.display = "none";
   }
 };
 
