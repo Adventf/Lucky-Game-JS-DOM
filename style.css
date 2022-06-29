@@ -139,7 +139,7 @@ section {
 }
 
 .startButton {
-  padding-bottom: 5x;
+  padding-bottom: 5px;
   border: none;
   background-color: yellow;
   color: black;
@@ -227,4 +227,24 @@ section {
   height: 75px;
   background-color: wheat;
   border-radius: 15px;
+}
+
+/* mobile version */
+@media only screen and (max-width: 600px) {
+  .box {
+    font-size: 3em;
+  }
+  .startButton {
+    margin-top: -60px;
+    width: 150px;
+    font-size: 25px;
+  }
+  #logoutForm {
+    width: 150px;
+    font-size: 25px;
+  }
+  .username {
+    margin-top: 70px;
+    margin-bottom: -90px;
+  }
 }
